@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MyUnitConverter
 {
-    public partial class Form1 : Form
+    public partial class StartingForm : Form
     {
-        public Form1()
+        public StartingForm()
         {
             InitializeComponent();
         }
