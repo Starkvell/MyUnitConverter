@@ -117,5 +117,15 @@ namespace MyUnitConverter
         {
             Calculate();
         }
+
+        private void ClearButton_Click(object sender, EventArgs e)
+        {
+            ClearAll();
+        }
+
+        private void SwapButton_Click(object sender, EventArgs e)
+        {
+            (FromUnitPicker.SelectedIndex, ToUnitPicker.SelectedIndex) = (ToUnitPicker.SelectedIndex, FromUnitPicker.SelectedIndex);
+        }
     }
 }

@@ -32,8 +32,8 @@
             this.MainArea = new System.Windows.Forms.Panel();
             this.StatusBarStrip = new System.Windows.Forms.StatusStrip();
             this.StatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
-            this.Swap = new System.Windows.Forms.Button();
-            this.Clear = new System.Windows.Forms.Button();
+            this.SwapButton = new System.Windows.Forms.Button();
+            this.ClearButton = new System.Windows.Forms.Button();
             this.OutputBox = new System.Windows.Forms.TextBox();
             this.InputBox = new System.Windows.Forms.TextBox();
             this.ToUnitPicker = new System.Windows.Forms.ListBox();
@@ -50,8 +50,8 @@
             // 
             this.MainArea.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.MainArea.Controls.Add(this.StatusBarStrip);
-            this.MainArea.Controls.Add(this.Swap);
-            this.MainArea.Controls.Add(this.Clear);
+            this.MainArea.Controls.Add(this.SwapButton);
+            this.MainArea.Controls.Add(this.ClearButton);
             this.MainArea.Controls.Add(this.OutputBox);
             this.MainArea.Controls.Add(this.InputBox);
             this.MainArea.Controls.Add(this.ToUnitPicker);
@@ -80,28 +80,30 @@
             this.StatusLabel.Size = new System.Drawing.Size(88, 17);
             this.StatusLabel.Text = "Status Message";
             // 
-            // Swap
+            // SwapButton
             // 
-            this.Swap.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.Swap.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.Swap.Location = new System.Drawing.Point(371, 178);
-            this.Swap.Name = "Swap";
-            this.Swap.Size = new System.Drawing.Size(155, 32);
-            this.Swap.TabIndex = 6;
-            this.Swap.Text = "Swap";
-            this.Swap.UseVisualStyleBackColor = false;
+            this.SwapButton.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.SwapButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.SwapButton.Location = new System.Drawing.Point(371, 178);
+            this.SwapButton.Name = "SwapButton";
+            this.SwapButton.Size = new System.Drawing.Size(155, 32);
+            this.SwapButton.TabIndex = 6;
+            this.SwapButton.Text = "Swap";
+            this.SwapButton.UseVisualStyleBackColor = false;
+            this.SwapButton.Click += new System.EventHandler(this.SwapButton_Click);
             // 
-            // Clear
+            // ClearButton
             // 
-            this.Clear.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.Clear.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Clear.ForeColor = System.Drawing.SystemColors.Window;
-            this.Clear.Location = new System.Drawing.Point(198, 178);
-            this.Clear.Name = "Clear";
-            this.Clear.Size = new System.Drawing.Size(155, 32);
-            this.Clear.TabIndex = 5;
-            this.Clear.Text = "Clear";
-            this.Clear.UseVisualStyleBackColor = false;
+            this.ClearButton.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.ClearButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ClearButton.ForeColor = System.Drawing.SystemColors.Window;
+            this.ClearButton.Location = new System.Drawing.Point(198, 178);
+            this.ClearButton.Name = "ClearButton";
+            this.ClearButton.Size = new System.Drawing.Size(155, 32);
+            this.ClearButton.TabIndex = 5;
+            this.ClearButton.Text = "Clear";
+            this.ClearButton.UseVisualStyleBackColor = false;
+            this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
             // 
             // OutputBox
             // 
@@ -214,8 +216,8 @@
 
         private System.Windows.Forms.StatusStrip StatusBarStrip;
 
-        private System.Windows.Forms.Button Clear;
-        private System.Windows.Forms.Button Swap;
+        private System.Windows.Forms.Button ClearButton;
+        private System.Windows.Forms.Button SwapButton;
 
         private System.Windows.Forms.TextBox OutputBox;
         private System.Windows.Forms.TextBox InputBox;
