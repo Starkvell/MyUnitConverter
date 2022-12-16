@@ -157,12 +157,13 @@
             this.QuantityPicker.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.QuantityPicker.FormattingEnabled = true;
             this.QuantityPicker.ItemHeight = 20;
-            this.QuantityPicker.Items.AddRange(new object[] { "Length", "Area", "Volume", "Time", "Speed", "Mass", "Energy" });
+            this.QuantityPicker.Items.AddRange(new object[] { "Length", "Mass", "Speed", "Area", "Energy", "Force" });
             this.QuantityPicker.Location = new System.Drawing.Point(0, 0);
             this.QuantityPicker.Margin = new System.Windows.Forms.Padding(0);
             this.QuantityPicker.Name = "QuantityPicker";
             this.QuantityPicker.Size = new System.Drawing.Size(187, 244);
             this.QuantityPicker.TabIndex = 0;
+            this.QuantityPicker.SelectedIndexChanged += new System.EventHandler(this.QuantityPicker_SelectedIndexChanged);
             // 
             // MainBoxMenuStrip
             // 
@@ -178,8 +179,8 @@
             // 
             this.aboutToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlText;
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
-            this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
+            this.aboutToolStripMenuItem.Text = "О программе";
             // 
             // StartingForm
             // 
