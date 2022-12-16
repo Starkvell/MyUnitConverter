@@ -5,52 +5,38 @@ namespace MyUnitConverter
 {
     public class StatusBarController
     {
-        private StatusStrip statusStrip;
-        private ToolStripStatusLabel statusLabel;
+        private StatusStrip _statusStrip;
+        private ToolStripStatusLabel _statusLabel;
 
-        private readonly Color errorColour = Color.FromArgb(192, 0, 0);
-        private readonly Color standardColour = Color.FromArgb(210, 90, 0);
-        private readonly Color positiveColour = Color.FromArgb(0, 128, 0);
+        private readonly Color _errorColour = Color.FromArgb(192, 0, 0);
+        private readonly Color _standardColour = Color.FromArgb(210, 90, 0);
+        private readonly Color _positiveColour = Color.FromArgb(0, 128, 0);
 
         public StatusBarController(StatusStrip pStatusStrip, ToolStripStatusLabel pStatusLabel)
         {
-            statusStrip = pStatusStrip;
-            statusLabel = pStatusLabel;
+            _statusStrip = pStatusStrip;
+            _statusLabel = pStatusLabel;
         }
 
         public void SetToReady()
         {
-            statusStrip.BackColor = standardColour;
-            statusLabel.BackColor = standardColour;
-            statusLabel.Text = "Ready";
+            _statusStrip.BackColor = _standardColour;
+            _statusLabel.BackColor = _standardColour;
+            _statusLabel.Text = "Ready";
         }
 
         public void SetToDone()
         {
-            statusStrip.BackColor = positiveColour;
-            statusLabel.BackColor = positiveColour;
-            statusLabel.Text = "Done";
+            _statusStrip.BackColor = _positiveColour;
+            _statusLabel.BackColor = _positiveColour;
+            _statusLabel.Text = "Done";
         }
 
         public void SetToInvalidInput()
         {
-            statusStrip.BackColor = errorColour;
-            statusLabel.BackColor = errorColour;
-            statusLabel.Text = "Invalid input(s)!";
-        }
-
-        public void SetToRoundOffValueSet()
-        {
-            statusStrip.BackColor = positiveColour;
-            statusLabel.BackColor = positiveColour;
-            statusLabel.Text = "Round-off setting updated";
-        }
-
-        public void SetToSettingUpdated()
-        {
-            statusStrip.BackColor = positiveColour;
-            statusLabel.BackColor = positiveColour;
-            statusLabel.Text = "Setting updated";
+            _statusStrip.BackColor = _errorColour;
+            _statusLabel.BackColor = _errorColour;
+            _statusLabel.Text = "Invalid input(s)!";
         }
     }
 }
