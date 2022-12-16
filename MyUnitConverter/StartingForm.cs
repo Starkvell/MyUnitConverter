@@ -68,12 +68,10 @@ namespace MyUnitConverter
         
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         { 
-            //TODO: Реализовать окно о программе.
-            
-            /* AboutUnitConverter aboutUnitConverter = new AboutUnitConverter(); 
+            AboutUnitConverter aboutUnitConverter = new AboutUnitConverter(); 
             if (this.TopMost)
-            aboutUnitConverter.TopMost = true;
-            aboutUnitConverter.Show(); */
+                aboutUnitConverter.TopMost = true;
+            aboutUnitConverter.Show();
         }
         
         private void Calculate()
