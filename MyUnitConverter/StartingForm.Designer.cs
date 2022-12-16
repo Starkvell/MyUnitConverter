@@ -48,7 +48,7 @@
             // 
             // MainArea
             // 
-            this.MainArea.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.MainArea.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(103)))), ((int)(((byte)(51)))));
             this.MainArea.Controls.Add(this.StatusBarStrip);
             this.MainArea.Controls.Add(this.SwapButton);
             this.MainArea.Controls.Add(this.ClearButton);
@@ -66,7 +66,7 @@
             // 
             // StatusBarStrip
             // 
-            this.StatusBarStrip.BackColor = System.Drawing.Color.Gray;
+            this.StatusBarStrip.BackColor = System.Drawing.Color.OrangeRed;
             this.StatusBarStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { this.StatusLabel });
             this.StatusBarStrip.Location = new System.Drawing.Point(187, 222);
             this.StatusBarStrip.Name = "StatusBarStrip";
@@ -82,7 +82,7 @@
             // 
             // SwapButton
             // 
-            this.SwapButton.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.SwapButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(44)))), ((int)(((byte)(54)))));
             this.SwapButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.SwapButton.Location = new System.Drawing.Point(371, 178);
             this.SwapButton.Name = "SwapButton";
@@ -94,7 +94,7 @@
             // 
             // ClearButton
             // 
-            this.ClearButton.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.ClearButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(44)))), ((int)(((byte)(54)))));
             this.ClearButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ClearButton.ForeColor = System.Drawing.SystemColors.Window;
             this.ClearButton.Location = new System.Drawing.Point(198, 178);
@@ -107,9 +107,9 @@
             // 
             // OutputBox
             // 
-            this.OutputBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.OutputBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(168)))), ((int)(((byte)(172)))));
             this.OutputBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.OutputBox.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.OutputBox.ForeColor = System.Drawing.SystemColors.ControlText;
             this.OutputBox.Location = new System.Drawing.Point(371, 152);
             this.OutputBox.Name = "OutputBox";
             this.OutputBox.Size = new System.Drawing.Size(155, 20);
@@ -117,9 +117,9 @@
             // 
             // InputBox
             // 
-            this.InputBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.InputBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(168)))), ((int)(((byte)(172)))));
             this.InputBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.InputBox.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.InputBox.ForeColor = System.Drawing.SystemColors.ControlText;
             this.InputBox.Location = new System.Drawing.Point(198, 152);
             this.InputBox.Name = "InputBox";
             this.InputBox.Size = new System.Drawing.Size(155, 20);
@@ -128,7 +128,7 @@
             // 
             // ToUnitPicker
             // 
-            this.ToUnitPicker.BackColor = System.Drawing.Color.Gray;
+            this.ToUnitPicker.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(44)))), ((int)(((byte)(54)))));
             this.ToUnitPicker.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ToUnitPicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ToUnitPicker.ForeColor = System.Drawing.SystemColors.ControlLight;
@@ -142,7 +142,7 @@
             // 
             // FromUnitPicker
             // 
-            this.FromUnitPicker.BackColor = System.Drawing.Color.Gray;
+            this.FromUnitPicker.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(44)))), ((int)(((byte)(54)))));
             this.FromUnitPicker.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.FromUnitPicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FromUnitPicker.ForeColor = System.Drawing.SystemColors.ControlLight;
@@ -156,7 +156,7 @@
             // 
             // QuantityPicker
             // 
-            this.QuantityPicker.BackColor = System.Drawing.Color.Gray;
+            this.QuantityPicker.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(44)))), ((int)(((byte)(54)))));
             this.QuantityPicker.Dock = System.Windows.Forms.DockStyle.Left;
             this.QuantityPicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.QuantityPicker.ForeColor = System.Drawing.SystemColors.ControlLight;
@@ -172,7 +172,7 @@
             // 
             // MainBoxMenuStrip
             // 
-            this.MainBoxMenuStrip.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.MainBoxMenuStrip.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(168)))), ((int)(((byte)(172)))));
             this.MainBoxMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { this.aboutToolStripMenuItem });
             this.MainBoxMenuStrip.Location = new System.Drawing.Point(0, 0);
             this.MainBoxMenuStrip.Name = "MainBoxMenuStrip";

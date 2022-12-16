@@ -40,7 +40,7 @@ namespace MyUnitConverter
             // OkButton
             // 
             this.OkButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.OkButton.BackColor = System.Drawing.Color.Gray;
+            this.OkButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(168)))), ((int)(((byte)(172)))));
             this.OkButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.OkButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.OkButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -55,7 +55,8 @@ namespace MyUnitConverter
             // 
             // ProgramNameLabel
             // 
-            this.ProgramNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ProgramNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ProgramNameLabel.ForeColor = System.Drawing.SystemColors.ControlText;
             this.ProgramNameLabel.Location = new System.Drawing.Point(11, 18);
             this.ProgramNameLabel.Name = "ProgramNameLabel";
             this.ProgramNameLabel.Size = new System.Drawing.Size(358, 32);
@@ -64,7 +65,8 @@ namespace MyUnitConverter
             // 
             // CreatorLabel
             // 
-            this.CreatorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CreatorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CreatorLabel.ForeColor = System.Drawing.SystemColors.ControlText;
             this.CreatorLabel.Location = new System.Drawing.Point(11, 50);
             this.CreatorLabel.Name = "CreatorLabel";
             this.CreatorLabel.Size = new System.Drawing.Size(358, 32);
@@ -73,10 +75,10 @@ namespace MyUnitConverter
             // 
             // textBox1
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(168)))), ((int)(((byte)(172)))));
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.textBox1.Location = new System.Drawing.Point(16, 96);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
@@ -88,7 +90,7 @@ namespace MyUnitConverter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(168)))), ((int)(((byte)(172)))));
             this.CancelButton = this.OkButton;
             this.ClientSize = new System.Drawing.Size(374, 271);
             this.Controls.Add(this.textBox1);
