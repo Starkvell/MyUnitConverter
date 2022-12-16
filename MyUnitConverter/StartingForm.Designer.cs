@@ -122,6 +122,7 @@
             this.InputBox.Name = "InputBox";
             this.InputBox.Size = new System.Drawing.Size(155, 20);
             this.InputBox.TabIndex = 3;
+            this.InputBox.TextChanged += new System.EventHandler(this.InputBox_TextChanged);
             // 
             // ToUnitPicker
             // 
@@ -135,6 +136,7 @@
             this.ToUnitPicker.Name = "ToUnitPicker";
             this.ToUnitPicker.Size = new System.Drawing.Size(155, 135);
             this.ToUnitPicker.TabIndex = 2;
+            this.ToUnitPicker.SelectedIndexChanged += new System.EventHandler(this.ToUnitPicker_SelectedIndexChanged);
             // 
             // FromUnitPicker
             // 
@@ -148,6 +150,7 @@
             this.FromUnitPicker.Name = "FromUnitPicker";
             this.FromUnitPicker.Size = new System.Drawing.Size(155, 135);
             this.FromUnitPicker.TabIndex = 1;
+            this.FromUnitPicker.SelectedIndexChanged += new System.EventHandler(this.FromUnitPicker_SelectedIndexChanged);
             // 
             // QuantityPicker
             // 
@@ -181,6 +184,7 @@
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
             this.aboutToolStripMenuItem.Text = "О программе";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // StartingForm
             // 

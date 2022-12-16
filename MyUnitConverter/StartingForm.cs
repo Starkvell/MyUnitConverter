@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -64,6 +65,57 @@ namespace MyUnitConverter
             InputBox.Text = "";
             _statusBarController.SetToReady();
         }
+        
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        { 
+            //TODO: Реализовать окно о программе.
+            
+            /* AboutUnitConverter aboutUnitConverter = new AboutUnitConverter(); 
+            if (this.TopMost)
+            aboutUnitConverter.TopMost = true;
+            aboutUnitConverter.Show(); */
+        }
+        
+        private void Calculate()
+        {
+            string fromUnitName = (string)FromUnitPicker.SelectedItem;
+            string toUnitName = (string)ToUnitPicker.SelectedItem;
+            if (fromUnitName == null || toUnitName == null) return;
+            bool canParse = double.TryParse(InputBox.Text, out double inputValue);
+            if (canParse)
+            {
+                var result = UnitConverter.ConvertByName(inputValue, QuantityPicker.SelectedItem.ToString(),
+                    fromUnitName,
+                    toUnitName);
+                OutputBox.Text = result.ToString();
+                _statusBarController.SetToDone();
+            }
+            else if (string.IsNullOrWhiteSpace(InputBox.Text))
+            {
+                OutputBox.Text = "0";
+                _statusBarController.SetToReady();
+            }
 
+            else
+            {
+                OutputBox.Text = "0";
+                _statusBarController.SetToInvalidInput();
+            }
+        }
+        
+        private void InputBox_TextChanged(object sender, EventArgs e)
+        {
+            Calculate();
+        }
+
+        private void FromUnitPicker_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Calculate();
+        }
+
+        private void ToUnitPicker_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Calculate();
+        }
     }
 }
