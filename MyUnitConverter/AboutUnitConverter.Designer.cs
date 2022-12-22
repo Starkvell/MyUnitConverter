@@ -31,6 +31,7 @@ namespace MyUnitConverter
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AboutUnitConverter));
             this.OkButton = new System.Windows.Forms.Button();
             this.ProgramNameLabel = new System.Windows.Forms.Label();
             this.CreatorLabel = new System.Windows.Forms.Label();
@@ -61,7 +62,7 @@ namespace MyUnitConverter
             this.ProgramNameLabel.Name = "ProgramNameLabel";
             this.ProgramNameLabel.Size = new System.Drawing.Size(358, 32);
             this.ProgramNameLabel.TabIndex = 1;
-            this.ProgramNameLabel.Text = "Имя программы: Конвертер величин";
+            this.ProgramNameLabel.Text = "Program name: Unit converter";
             // 
             // CreatorLabel
             // 
@@ -71,7 +72,7 @@ namespace MyUnitConverter
             this.CreatorLabel.Name = "CreatorLabel";
             this.CreatorLabel.Size = new System.Drawing.Size(358, 32);
             this.CreatorLabel.TabIndex = 2;
-            this.CreatorLabel.Text = "Создатель: Ануфриев Павел";
+            this.CreatorLabel.Text = "Creator: Pavel Anufriev";
             // 
             // textBox1
             // 
@@ -84,7 +85,7 @@ namespace MyUnitConverter
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(340, 97);
             this.textBox1.TabIndex = 3;
-            this.textBox1.Text = "Программа, позволяющая быстро и точно перевести одни еденицыы измерения в другие." + "\r\nПригодится инженерам, физикам, математикам и всем, кто работает с разными еден" + "ицами измерения.";
+            this.textBox1.Text = resources.GetString("textBox1.Text");
             // 
             // AboutUnitConverter
             // 

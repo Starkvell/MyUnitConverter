@@ -184,8 +184,8 @@
             // 
             this.aboutToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlText;
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
-            this.aboutToolStripMenuItem.Text = "О программе";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
+            this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // StartingForm
@@ -201,7 +201,7 @@
             this.MainMenuStrip = this.MainBoxMenuStrip;
             this.MaximizeBox = false;
             this.Name = "StartingForm";
-            this.Text = "Конвертер величин";
+            this.Text = "Unit converter";
             this.MainArea.ResumeLayout(false);
             this.MainArea.PerformLayout();
             this.StatusBarStrip.ResumeLayout(false);
