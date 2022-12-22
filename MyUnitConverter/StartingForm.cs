@@ -63,7 +63,7 @@ namespace MyUnitConverter
             var toUnitName = (string)ToUnitPicker.SelectedItem;
             if (fromUnitName == null || toUnitName == null) return;
             bool canParse = double.TryParse(InputBox.Text, out double inputValue);
-            if (canParse)
+            if (canParse && !InputBox.Text.Contains("-"))
             {
                 var result = UnitConverter.ConvertByName(inputValue, QuantityPicker.SelectedItem.ToString(),
                     fromUnitName,
@@ -73,12 +73,12 @@ namespace MyUnitConverter
             }
             else if (string.IsNullOrWhiteSpace(InputBox.Text))
             {
-                OutputBox.Text = "0";
+                OutputBox.Text = "";
                 _statusBarController.SetToReady();
             }
             else
             {
-                OutputBox.Text = "0";
+                OutputBox.Text = "";
                 _statusBarController.SetToInvalidInput();
             }
         }
