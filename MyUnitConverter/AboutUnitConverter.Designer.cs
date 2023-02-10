@@ -106,7 +106,7 @@ namespace MyUnitConverter
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "О программе";
+            this.Text = "About";
             this.ResumeLayout(false);
             this.PerformLayout();
         }
